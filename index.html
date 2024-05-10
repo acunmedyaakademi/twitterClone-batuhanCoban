@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twitter Clone</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
 
@@ -29,8 +28,8 @@
       <div class="container">
         <div class="tweet-div">
           <form id="addForm">
-            <textarea class="textarea" name="tweet" id="tweetInput" placeholder="Ne düşünüyorsun?" required></textarea>
-            <button id="tweetBtn">Tweetle</button>
+            <input class="textarea" name="tweet" id="tweetInput" placeholder="Ne düşünüyorsun?" required></input>
+            <button type="submit" id="tweetBtn">Tweetle</button>
           </form>
         </div>
         <div id="tweetFeed" class="tweet-feed">
@@ -41,6 +40,8 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
